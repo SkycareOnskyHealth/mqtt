@@ -1,4 +1,4 @@
-module github.com/onskycloud/mqtt
+module github.com/SkycareOnskyHealth/mqtt
 
 go 1.13
 
