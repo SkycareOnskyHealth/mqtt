@@ -1,8 +1,8 @@
 # MQTT Helper
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://github.com/onskycloud/mqtt)
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://github.com/SkycareOnskyHealth/mqtt)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/onskycloud/mqtt)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/SkycareOnskyHealth/mqtt)
 
 MQTT parser helper.
 
@@ -25,7 +25,7 @@ Request handler requires [Go](https://golang.org/) v1.11+ to run.
 Install the package.
 
 ```sh
-$ go get github.com/onskycloud/mqtt
+$ go get github.com/SkycareOnskyHealth/mqtt
 ```
 
 #### Kubernetes + Google Cloud

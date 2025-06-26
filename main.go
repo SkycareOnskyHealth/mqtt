@@ -10,10 +10,10 @@ import (
 	"time"
 	"unicode"
 
+	"github.com/SkycareOnskyHealth/rbac/model"
+	proto "github.com/SkycareOnskyHealth/rbac/proto/calling"
+	notifyProto "github.com/SkycareOnskyHealth/rbac/proto/simple-notification"
 	MQTT "github.com/eclipse/paho.mqtt.golang"
-	"github.com/onskycloud/rbac/model"
-	proto "github.com/onskycloud/rbac/proto/calling"
-	notifyProto "github.com/onskycloud/rbac/proto/simple-notification"
 )
 
 // TimeZone default time zone
@@ -228,7 +228,7 @@ func ConvertStringToInt(text string) int {
 	return value
 }
 
-//GetNotificationType get notification type
+// GetNotificationType get notification type
 func GetNotificationType(securityType model.SecurityType) model.NotificationType {
 	switch securityType {
 	case model.Co:
