@@ -329,6 +329,12 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "OnSky Medical Alert service"
 			case model.BedSensorCrying:
 				return "OnSky Medical Alert service"
+			case model.SkyBandSpo2Low:
+				return "OnSky Medical Alert service"
+			case model.SkyBandHeartRateRateLow:
+				return "OnSky Medical Alert service"
+			case model.SkyBandHeartRateRateHeight:
+				return "OnSky Medical Alert service"
 			default:
 				return "OnSky Security & Safety service"
 			}
@@ -390,6 +396,12 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "Please check"
 			case model.BedSensorCrying:
 				return "Please check"
+			case model.SkyBandSpo2Low:
+				return "Please check"
+			case model.SkyBandHeartRateRateLow:
+				return "Please check"
+			case model.SkyBandHeartRateRateHeight:
+				return "Please check"
 			default:
 				return "Check Now!"
 			}
@@ -437,6 +449,12 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "Detecting user have left the bed from OnSky device"
 			case model.BedSensorCrying:
 				return "Detecting baby crying from OnSky device"
+			case model.SkyBandSpo2Low:
+				return "Detecting spo2 is too low from OnSky device"
+			case model.SkyBandHeartRateRateLow:
+				return "Detecting heart rate is too low from OnSky device"
+			case model.SkyBandHeartRateRateHeight:
+				return "Detecting heart rate is too high from OnSky device"
 			default:
 				return "Intruder detected in"
 			}
@@ -475,6 +493,12 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 			case model.BedSensorBedLeaving:
 				return "Dich vu y te OnSky"
 			case model.BedSensorCrying:
+				return "Dich vu y te OnSky"
+			case model.SkyBandSpo2Low:
+				return "Dich vu y te OnSky"
+			case model.SkyBandHeartRateRateLow:
+				return "Dich vu y te OnSky"
+			case model.SkyBandHeartRateRateHeight:
 				return "Dich vu y te OnSky"
 			default:
 				return "Dich vu an ninh & an toan OnSky"
@@ -537,6 +561,12 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "Vui long kiem tra"
 			case model.BedSensorCrying:
 				return "Vui long kiem tra"
+			case model.SkyBandSpo2Low:
+				return "Vui long kiem tra"
+			case model.SkyBandHeartRateRateLow:
+				return "Vui long kiem tra"
+			case model.SkyBandHeartRateRateHeight:
+				return "Vui long kiem tra"
 			default:
 				return "Vui long kiem tra"
 			}
@@ -584,6 +614,12 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "Phat hien nguoi dung da roi khoi giuong tu thiet bi OnSky"
 			case model.BedSensorCrying:
 				return "Phat hien em be dang khoc tu thiet bi OnSky"
+			case model.SkyBandSpo2Low:
+				return "Phat hien spo2 qua thap tu thiet bi OnSky"
+			case model.SkyBandHeartRateRateLow:
+				return "Phat hien nhip tim qua thap tu thiet bi OnSky"
+			case model.SkyBandHeartRateRateHeight:
+				return "Phat hien nhip tim qua cao tu thiet bi OnSky"
 			default:
 				return "Phat hien dot nhap tai"
 			}
