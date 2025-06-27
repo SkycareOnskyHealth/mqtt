@@ -10,10 +10,10 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/SkycareOnskyHealth/rbac/model"
-	proto "github.com/SkycareOnskyHealth/rbac/proto/calling"
-	notifyProto "github.com/SkycareOnskyHealth/rbac/proto/simple-notification"
 	MQTT "github.com/eclipse/paho.mqtt.golang"
+	"github.com/onskycloud/rbac/model"
+	proto "github.com/onskycloud/rbac/proto/calling"
+	notifyProto "github.com/onskycloud/rbac/proto/simple-notification"
 )
 
 // TimeZone default time zone
@@ -295,6 +295,8 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 		switch key {
 		case "onsky_security":
 			switch templateType {
+			case model.BedSensorAbnormalVitalSigns:
+				return "OnSky Medical Alert service"
 			case model.SafetyBreachSOS:
 				return "OnSky Medical Alert service"
 			case model.BedSensorSOS:
@@ -354,6 +356,8 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "Please check"
 			case model.BedSensorEpilepsy:
 				return "Please check"
+			case model.BedSensorAbnormalVitalSigns:
+				return "Please check"
 			default:
 				return "Check Now!"
 			}
@@ -374,17 +378,19 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 			case model.LowBattery:
 				return "Warning: Low battery detected at"
 			case model.BedSensorSOS:
-				return "Possible SOS Emergency Alert from SkyPad device"
+				return "Possible SOS Urgency Alert from OnSky device"
 			case model.BedSensorHeartStop:
-				return "Possible Heart Attack Alert from SkyPad device"
+				return "Possible Heart Attack Alert from OnSky device"
 			case model.BedSensorBreathStop:
-				return "Possible Apnea Alert from SkyPad device"
+				return "Possible Apnea Alert from OnSky device"
 			case model.BedSensorTachycardia:
 				return "OS-LAVIE detects irregular heart rhythms - tachycardia. Your heart rate is very fast, starting at "
 			case model.BedSensorBradycardia:
 				return "OS-LAVIE detects irregular heart rhythms - bradycardia. Your heart rate is very slow, starting at"
 			case model.BedSensorEpilepsy:
-				return "Possible Seizure Alert from SkyPad device"
+				return "Possible Seizure Alert from OnSky device"
+			case model.BedSensorAbnormalVitalSigns:
+				return "Alert detect abnormal Vital Signs from OnSky device"
 			default:
 				return "Intruder detected in"
 			}
@@ -394,6 +400,8 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 		switch key {
 		case "onsky_security":
 			switch templateType {
+			case model.BedSensorAbnormalVitalSigns:
+				return "Dich vu y te OnSky"
 			case model.SafetyBreachSOS:
 				return "Dich vu y te OnSky"
 			case model.BedSensorSOS:
@@ -439,6 +447,8 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 			return timestamp
 		case "please_check":
 			switch templateType {
+			case model.BedSensorAbnormalVitalSigns:
+				return "Vui long kiem tra"
 			case model.SafetyBreachSOS:
 				return "Vui long kiem tra"
 			case model.BedSensorSOS:
@@ -473,17 +483,19 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 			case model.LowBattery:
 				return "Canh bao thiet bi SOS yeu pin tai"
 			case model.BedSensorSOS:
-				return "Canh bao co tin hieu cap cuu cua nguoi dung duoc gui tu thiet bi Skypad"
+				return "Canh bao co tin hieu cap cuu cua nguoi dung duoc gui tu thiet bi OnSky"
 			case model.BedSensorHeartStop:
-				return "Canh bao tim nguoi dung co dau hieu ngung dap duoc gui tu thiet bi Skypad"
+				return "Canh bao tim nguoi dung co dau hieu ngung dap duoc gui tu thiet bi OnSky"
 			case model.BedSensorBreathStop:
-				return "Canh bao phoi nguoi dung co dau hieu ngung tho duoc gui tu thiet bi Skypad"
+				return "Canh bao phoi nguoi dung co dau hieu ngung tho duoc gui tu thiet bi OnSky"
 			case model.BedSensorTachycardia:
 				return "Canh bao tim nguoi dung co dau hieu khong on dinh. Tim cua ban dap rat nhanh vao luc "
 			case model.BedSensorBradycardia:
 				return "Canh bao tim nguoi dung co dau hieu khong on dinh. Tim cua ban dap rat cham vao luc"
 			case model.BedSensorEpilepsy:
-				return "Canh bao nguoi dung co dau hieu bi dong kinh duoc gui tu thiet bi Skypad"
+				return "Canh bao nguoi dung co dau hieu bi dong kinh duoc gui tu thiet bi OnSky"
+			case model.BedSensorAbnormalVitalSigns:
+				return "Canh bao phat hien Dau Hieu Sinh Ton bat thuong duoc gui tu thiet bi OnSky"
 			default:
 				return "Phat hien dot nhap tai"
 			}
