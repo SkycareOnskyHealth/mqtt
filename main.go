@@ -214,6 +214,8 @@ func CheckTemplateType(name string) model.SecurityType {
 		return model.OSLocus
 	case "Bed Sensor":
 		return model.BedSensor
+	case "Sky Band":
+		return model.SkyBand
 	default:
 		return model.Motion
 	}
@@ -266,6 +268,8 @@ func CheckSecurityState(templateType model.SecurityType) model.Mode {
 	case model.DoorLock:
 		return model.Security
 	case model.BedSensor:
+		return model.Safety
+	case model.SkyBand:
 		return model.Safety
 	default:
 		return model.Security
