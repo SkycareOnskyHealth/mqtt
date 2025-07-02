@@ -330,11 +330,11 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 			case model.BedSensorCrying:
 				return "OnSky Medical Alert service"
 			case model.SkyBandSpo2Low:
-				return "OnSky Medical Alert service"
+				return "OnSky Alert service"
 			case model.SkyBandHeartRateLow:
-				return "OnSky Medical Alert service"
+				return "OnSky Alert service"
 			case model.SkyBandHeartRateHeight:
-				return "OnSky Medical Alert service"
+				return "OnSky Alert service"
 			default:
 				return "OnSky Security & Safety service"
 			}
@@ -450,11 +450,11 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 			case model.BedSensorCrying:
 				return "Detecting baby crying from OnSky device"
 			case model.SkyBandSpo2Low:
-				return "Detecting spo2 is too low from OnSky device"
+				return "Detect low peripheral oxygen saturation from OnSky device"
 			case model.SkyBandHeartRateLow:
-				return "Detecting heart rate is too low from OnSky device"
+				return "Detect low heart rate from OnSky device"
 			case model.SkyBandHeartRateHeight:
-				return "Detecting heart rate is too high from OnSky device"
+				return "Detect high heart rate from OnSky device"
 			default:
 				return "Intruder detected in"
 			}
@@ -495,11 +495,11 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 			case model.BedSensorCrying:
 				return "Dich vu y te OnSky"
 			case model.SkyBandSpo2Low:
-				return "Dich vu y te OnSky"
+				return "Dịch vụ cảnh báo OnSky"
 			case model.SkyBandHeartRateLow:
-				return "Dich vu y te OnSky"
+				return "Dịch vụ cảnh báo OnSky"
 			case model.SkyBandHeartRateHeight:
-				return "Dich vu y te OnSky"
+				return "Dịch vụ cảnh báo OnSky"
 			default:
 				return "Dich vu an ninh & an toan OnSky"
 			}
@@ -615,11 +615,11 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 			case model.BedSensorCrying:
 				return "Phat hien em be dang khoc tu thiet bi OnSky"
 			case model.SkyBandSpo2Low:
-				return "Phat hien spo2 qua thap tu thiet bi OnSky"
+				return "Phát hiện độ bão hòa oxy trong máu thấp từ thiết bị OnSky"
 			case model.SkyBandHeartRateLow:
-				return "Phat hien nhip tim qua thap tu thiet bi OnSky"
+				return "Phát hiện nhip tim thấp từ thiết bị OnSky"
 			case model.SkyBandHeartRateHeight:
-				return "Phat hien nhip tim qua cao tu thiet bi OnSky"
+				return "Phát hiện nhịp tim cao từ thiết bị OnSky"
 			default:
 				return "Phat hien dot nhap tai"
 			}
