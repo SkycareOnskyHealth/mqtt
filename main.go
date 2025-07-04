@@ -450,7 +450,7 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 			case model.BedSensorCrying:
 				return "Detecting baby crying from OnSky device"
 			case model.SkyBandSpo2Low:
-				return "Detect low peripheral oxygen saturation from OnSky device"
+				return "Detect low peripheral oxygen saturation (spo2) from OnSky device"
 			case model.SkyBandHeartRateLow:
 				return "Detect low heart rate from OnSky device"
 			case model.SkyBandHeartRateHeight:
@@ -615,7 +615,7 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 			case model.BedSensorCrying:
 				return "Phat hien em be dang khoc tu thiet bi OnSky"
 			case model.SkyBandSpo2Low:
-				return "Phát hiện độ bão hòa oxy trong máu thấp từ thiết bị OnSky"
+				return "Phát hiện độ bão hòa oxy trong máu (spo2) thấp từ thiết bị OnSky"
 			case model.SkyBandHeartRateLow:
 				return "Phát hiện nhip tim thấp từ thiết bị OnSky"
 			case model.SkyBandHeartRateHeight:
