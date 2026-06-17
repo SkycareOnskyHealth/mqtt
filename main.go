@@ -216,6 +216,8 @@ func CheckTemplateType(name string) model.SecurityType {
 		return model.BedSensor
 	case "Sky Band":
 		return model.SkyBand
+	case "SkySOS":
+		return model.SkySOS
 	default:
 		return model.Motion
 	}
@@ -270,6 +272,8 @@ func CheckSecurityState(templateType model.SecurityType) model.Mode {
 	case model.BedSensor:
 		return model.Safety
 	case model.SkyBand:
+		return model.Safety
+	case model.SkySOS:
 		return model.Safety
 	default:
 		return model.Security
@@ -334,6 +338,14 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 			case model.SkyBandHeartRateLow:
 				return "OnSky Alert service"
 			case model.SkyBandHeartRateHeight:
+				return "OnSky Alert service"
+			case model.SkySOSButton:
+				return "OnSky Alert service"
+			case model.SkySOSFallDetection:
+				return "OnSky Alert service"
+			case model.SkySOSGeofenceEnter:
+				return "OnSky Alert service"
+			case model.SkySOSGeofenceExit:
 				return "OnSky Alert service"
 			default:
 				return "OnSky Security & Safety service"
@@ -402,6 +414,14 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "Please check"
 			case model.SkyBandHeartRateHeight:
 				return "Please check"
+			case model.SkySOSButton:
+				return "Please check"
+			case model.SkySOSFallDetection:
+				return "Please check"
+			case model.SkySOSGeofenceEnter:
+				return "Please check"
+			case model.SkySOSGeofenceExit:
+				return "Please check"
 			default:
 				return "Check Now!"
 			}
@@ -455,6 +475,15 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "Detect low heart rate from OnSky device"
 			case model.SkyBandHeartRateHeight:
 				return "Detect high heart rate from OnSky device"
+			case model.SkySOSButton:
+				return "Possible SOS Urgency Alert from OnSky device"
+			case model.SkySOSFallDetection:
+				return "Detect fall from OnSky device"
+			case model.SkySOSGeofenceEnter:
+				return "Detect geofence enter from OnSky device"
+			case model.SkySOSGeofenceExit:
+				return "Detect geofence exit from OnSky device"
+
 			default:
 				return "Intruder detected in"
 			}
@@ -499,6 +528,14 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 			case model.SkyBandHeartRateLow:
 				return "Dịch vụ cảnh báo OnSky"
 			case model.SkyBandHeartRateHeight:
+				return "Dịch vụ cảnh báo OnSky"
+			case model.SkySOSButton:
+				return "Dịch vụ cảnh báo OnSky"
+			case model.SkySOSFallDetection:
+				return "Dịch vụ cảnh báo OnSky"
+			case model.SkySOSGeofenceEnter:
+				return "Dịch vụ cảnh báo OnSky"
+			case model.SkySOSGeofenceExit:
 				return "Dịch vụ cảnh báo OnSky"
 			default:
 				return "Dich vu an ninh & an toan OnSky"
@@ -567,6 +604,14 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "Vui long kiem tra"
 			case model.SkyBandHeartRateHeight:
 				return "Vui long kiem tra"
+			case model.SkySOSButton:
+				return "Vui long kiem tra"
+			case model.SkySOSFallDetection:
+				return "Vui long kiem tra"
+			case model.SkySOSGeofenceEnter:
+				return "Vui long kiem tra"
+			case model.SkySOSGeofenceExit:
+				return "Vui long kiem tra"
 			default:
 				return "Vui long kiem tra"
 			}
@@ -620,6 +665,14 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "Phát hiện nhip tim thấp từ thiết bị OnSky"
 			case model.SkyBandHeartRateHeight:
 				return "Phát hiện nhịp tim cao từ thiết bị OnSky"
+			case model.SkySOSButton:
+				return "Canh bao co tin hieu cap cuu cua nguoi dung duoc gui tu thiet bi OnSky"
+			case model.SkySOSFallDetection:
+				return "Phat hien te nga tu thiet bi OnSky"
+			case model.SkySOSGeofenceEnter:
+				return "Phat hien nguoi dung da vao vung an toan tu thiet bi OnSky"
+			case model.SkySOSGeofenceExit:
+				return "Phat hien nguoi dung da ra khoi vung an toan tu thiet bi OnSky"
 			default:
 				return "Phat hien dot nhap tai"
 			}
