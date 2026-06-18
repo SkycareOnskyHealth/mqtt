@@ -339,7 +339,7 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "OnSky Alert service"
 			case model.SkyBandHeartRateHeight:
 				return "OnSky Alert service"
-			case model.SkySOSButton:
+			case model.SkySOSButtonTriggered:
 				return "OnSky Alert service"
 			case model.SkySOSFallDetection:
 				return "OnSky Alert service"
@@ -414,7 +414,7 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "Please check"
 			case model.SkyBandHeartRateHeight:
 				return "Please check"
-			case model.SkySOSButton:
+			case model.SkySOSButtonTriggered:
 				return "Please check"
 			case model.SkySOSFallDetection:
 				return "Please check"
@@ -475,7 +475,7 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "Detect low heart rate from OnSky device"
 			case model.SkyBandHeartRateHeight:
 				return "Detect high heart rate from OnSky device"
-			case model.SkySOSButton:
+			case model.SkySOSButtonTriggered:
 				return "Possible SOS Urgency Alert from OnSky device"
 			case model.SkySOSFallDetection:
 				return "Detect fall from OnSky device"
@@ -529,7 +529,7 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "Dịch vụ cảnh báo OnSky"
 			case model.SkyBandHeartRateHeight:
 				return "Dịch vụ cảnh báo OnSky"
-			case model.SkySOSButton:
+			case model.SkySOSButtonTriggered:
 				return "Dịch vụ cảnh báo OnSky"
 			case model.SkySOSFallDetection:
 				return "Dịch vụ cảnh báo OnSky"
@@ -604,7 +604,7 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "Vui long kiem tra"
 			case model.SkyBandHeartRateHeight:
 				return "Vui long kiem tra"
-			case model.SkySOSButton:
+			case model.SkySOSButtonTriggered:
 				return "Vui long kiem tra"
 			case model.SkySOSFallDetection:
 				return "Vui long kiem tra"
@@ -665,7 +665,7 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 				return "Phát hiện nhip tim thấp từ thiết bị OnSky"
 			case model.SkyBandHeartRateHeight:
 				return "Phát hiện nhịp tim cao từ thiết bị OnSky"
-			case model.SkySOSButton:
+			case model.SkySOSButtonTriggered:
 				return "Canh bao co tin hieu cap cuu cua nguoi dung duoc gui tu thiet bi OnSky"
 			case model.SkySOSFallDetection:
 				return "Phat hien te nga tu thiet bi OnSky"
