@@ -476,13 +476,13 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 			case model.SkyBandHeartRateHeight:
 				return "Detect high heart rate from OnSky device"
 			case model.SkySOSButtonTriggered:
-				return "Possible SOS Urgency Alert from OnSky device"
+				return "Possible SOS Emergency Alert from OnSky Alert Necklace"
 			case model.SkySOSFallDetection:
-				return "Detect fall from OnSky device"
+				return "Detect fall from OnSky Alert Necklace"
 			case model.SkySOSGeofenceEnter:
-				return "Detect geofence enter from OnSky device"
+				return "Detect user entering Safety Zone by OnSky device Alert Necklace"
 			case model.SkySOSGeofenceExit:
-				return "Detect geofence exit from OnSky device"
+				return "Detect user exiting Safety Zone by OnSky device Alert Necklace"
 
 			default:
 				return "Intruder detected in"
@@ -666,13 +666,13 @@ func PrepareResourceLocale(templateType model.NotificationType, key string, loca
 			case model.SkyBandHeartRateHeight:
 				return "Phát hiện nhịp tim cao từ thiết bị OnSky"
 			case model.SkySOSButtonTriggered:
-				return "Canh bao co tin hieu cap cuu cua nguoi dung duoc gui tu thiet bi OnSky"
+				return "Canh bao khan cap SOS tu OnSky Alert Necklace"
 			case model.SkySOSFallDetection:
-				return "Phat hien te nga tu thiet bi OnSky"
+				return "Phat hien te nga tu OnSky Alert Necklace"
 			case model.SkySOSGeofenceEnter:
-				return "Phat hien nguoi dung da vao vung an toan tu thiet bi OnSky"
+				return "Phat hien nguoi dung di vao vung an toan tu OnSky Alert Necklace"
 			case model.SkySOSGeofenceExit:
-				return "Phat hien nguoi dung da ra khoi vung an toan tu thiet bi OnSky"
+				return "Phat hien nguoi dung di ra khoi vung an toan tu OnSky Alert Necklace"
 			default:
 				return "Phat hien dot nhap tai"
 			}
