@@ -547,245 +547,245 @@ Tài liệu này định nghĩa định dạng thông báo rút gọn chuyên bi
 
 ---
 
-## 2. Thiết Bị SkySOS (Dây Chuyền Khẩn Cấp / Alert Necklace)
+## 2. Thiết Bị SkySOS (Dây Chuyền Khẩn Cấp / Alert Pendant)
 
 ### 2.1. SkySOSButtonTriggered (Bấm Nút SOS Khẩn Cấp)
 
 - **Tiếng Anh (en-US):**
-  > `Detect SOS Alert from OnSky Alert Necklace. Please check.`
+  > `Detect SOS Alert from OnSky Alert Pendant. Please check.`
 
 - **Tiếng Việt (vi-VN):**
-  > `Phát hiện cảnh báo SOS từ OnSky Alert Necklace. Vui lòng kiểm tra.`
+  > `Phát hiện cảnh báo SOS từ OnSky Alert Pendant. Vui lòng kiểm tra.`
 
 - **Tiếng Trung Giản thể (zh-Hans):**
-  > `检测到来自OnSky Alert Necklace的SOS警报。请检查。`
+  > `检测到来自OnSky Alert Pendant的SOS警报。请检查。`
 
 - **Tiếng Trung Phồn thể (zh-Hant):**
-  > `檢測到來自OnSky Alert Necklace的SOS警報。請檢查。`
+  > `檢測到來自OnSky Alert Pendant的SOS警報。請檢查。`
 
 - **Tiếng Pháp (fr-FR):**
-  > `Détection d'une alerte SOS depuis l'OnSky Alert Necklace. Veuillez vérifier.`
+  > `Détection d'une alerte SOS depuis l'OnSky Alert Pendant. Veuillez vérifier.`
 
 - **Tiếng Đức (de-DE):**
-  > `SOS-Alarm von OnSky Alert Necklace erkannt. Bitte prüfen.`
+  > `SOS-Alarm von OnSky Alert Pendant erkannt. Bitte prüfen.`
 
 - **Tiếng Indonesia (id-ID):**
-  > `Mendeteksi Peringatan SOS dari OnSky Alert Necklace. Silakan periksa.`
+  > `Mendeteksi Peringatan SOS dari OnSky Alert Pendant. Silakan periksa.`
 
 - **Tiếng Nhật (ja-JP):**
-  > `OnSky Alert NecklaceからSOSアラートを検知しました。ご確認ください。`
+  > `OnSky Alert PendantからSOSアラートを検知しました。ご確認ください。`
 
 - **Tiếng Hàn (ko-KR):**
-  > `OnSky Alert Necklace에서 SOS 알림이 감지되었습니다. 확인해 주세요.`
+  > `OnSky Alert Pendant에서 SOS 알림이 감지되었습니다. 확인해 주세요.`
 
 - **Tiếng Tây Ban Nha (es-ES):**
-  > `Detección de alerta SOS desde OnSky Alert Necklace. Por favor revise.`
+  > `Detección de alerta SOS desde OnSky Alert Pendant. Por favor revise.`
 
 - **Tiếng Thái (th-TH):**
-  > `ตรวจพบการแจ้งเตือน SOS จาก OnSky Alert Necklace กรุณาตรวจสอบ`
+  > `ตรวจพบการแจ้งเตือน SOS จาก OnSky Alert Pendant กรุณาตรวจสอบ`
 
 - **Tiếng Filipino (fil-PH):**
-  > `Nakakita ng Alertong SOS mula sa OnSky Alert Necklace. Pakisuri.`
+  > `Nakakita ng Alertong SOS mula sa OnSky Alert Pendant. Pakisuri.`
 
 ---
 
 ### 2.2. SkySOSFallDetection (Phát Hiện Té Ngã)
 
 - **Tiếng Anh (en-US):**
-  > `Detect Fall Alert from OnSky Alert Necklace. Please check.`
+  > `Detect Fall Alert from OnSky Alert Pendant. Please check.`
 
 - **Tiếng Việt (vi-VN):**
-  > `Phát hiện cảnh báo té ngã từ OnSky Alert Necklace. Vui lòng kiểm tra.`
+  > `Phát hiện cảnh báo té ngã từ OnSky Alert Pendant. Vui lòng kiểm tra.`
 
 - **Tiếng Trung Giản thể (zh-Hans):**
-  > `检测到来自OnSky Alert Necklace的跌倒警报。请检查。`
+  > `检测到来自OnSky Alert Pendant的跌倒警报。请检查。`
 
 - **Tiếng Trung Phồn thể (zh-Hant):**
-  > `檢測到來自OnSky Alert Necklace的跌倒警報。請檢查。`
+  > `檢測到來自OnSky Alert Pendant的跌倒警報。請檢查。`
 
 - **Tiếng Pháp (fr-FR):**
-  > `Détection d'une alerte de chute depuis l'OnSky Alert Necklace. Veuillez vérifier.`
+  > `Détection d'une alerte de chute depuis l'OnSky Alert Pendant. Veuillez vérifier.`
 
 - **Tiếng Đức (de-DE):**
-  > `Sturz-Alarm von OnSky Alert Necklace erkannt. Bitte prüfen.`
+  > `Sturz-Alarm von OnSky Alert Pendant erkannt. Bitte prüfen.`
 
 - **Tiếng Indonesia (id-ID):**
-  > `Mendeteksi Peringatan Jatuh dari OnSky Alert Necklace. Silakan periksa.`
+  > `Mendeteksi Peringatan Jatuh dari OnSky Alert Pendant. Silakan periksa.`
 
 - **Tiếng Nhật (ja-JP):**
-  > `OnSky Alert Necklaceが転倒を検知しました。ご確認ください。`
+  > `OnSky Alert Pendantが転倒を検知しました。ご確認ください。`
 
 - **Tiếng Hàn (ko-KR):**
-  > `OnSky Alert Necklace에서 낙상 알림이 감지되었습니다. 확인해 주세요.`
+  > `OnSky Alert Pendant에서 낙상 알림이 감지되었습니다. 확인해 주세요.`
 
 - **Tiếng Tây Ban Nha (es-ES):**
-  > `Detección de alerta de caída desde OnSky Alert Necklace. Por favor revise.`
+  > `Detección de alerta de caída desde OnSky Alert Pendant. Por favor revise.`
 
 - **Tiếng Thái (th-TH):**
-  > `ตรวจพบการแจ้งเตือนการหกล้มจาก OnSky Alert Necklace กรุณาตรวจสอบ`
+  > `ตรวจพบการแจ้งเตือนการหกล้มจาก OnSky Alert Pendant กรุณาตรวจสอบ`
 
 - **Tiếng Filipino (fil-PH):**
-  > `Nakakita ng Alertong Pagkahulog mula sa OnSky Alert Necklace. Pakisuri.`
+  > `Nakakita ng Alertong Pagkahulog mula sa OnSky Alert Pendant. Pakisuri.`
 
 ---
 
 ### 2.3. SkySOSGeofenceEnter (Đi Vào Vùng An Toàn (Geofence Enter))
 
 - **Tiếng Anh (en-US):**
-  > `Detect user entering the Safety Zone by OnSky Alert Necklace. Please check.`
+  > `Detect user entering the Safety Zone by OnSky Alert Pendant. Please check.`
 
 - **Tiếng Việt (vi-VN):**
-  > `Phát hiện người dùng vào vùng an toàn từ OnSky Alert Necklace. Vui lòng kiểm tra.`
+  > `Phát hiện người dùng vào vùng an toàn từ OnSky Alert Pendant. Vui lòng kiểm tra.`
 
 - **Tiếng Trung Giản thể (zh-Hans):**
-  > `检测到用户进入OnSky Alert Necklace设定的安全区域。请检查。`
+  > `检测到用户进入OnSky Alert Pendant设定的安全区域。请检查。`
 
 - **Tiếng Trung Phồn thể (zh-Hant):**
-  > `檢測到用戶進入OnSky Alert Necklace設定的安全區域。請檢查。`
+  > `檢測到用戶進入OnSky Alert Pendant設定的安全區域。請檢查。`
 
 - **Tiếng Pháp (fr-FR):**
-  > `Détection de l'entrée de l'utilisateur dans la zone de sécurité par l'OnSky Alert Necklace. Veuillez vérifier.`
+  > `Détection de l'entrée de l'utilisateur dans la zone de sécurité par l'OnSky Alert Pendant. Veuillez vérifier.`
 
 - **Tiếng Đức (de-DE):**
-  > `Benutzer betritt die Sicherheitszone laut OnSky Alert Necklace. Bitte prüfen.`
+  > `Benutzer betritt die Sicherheitszone laut OnSky Alert Pendant. Bitte prüfen.`
 
 - **Tiếng Indonesia (id-ID):**
-  > `Mendeteksi pengguna memasuki Zona Aman oleh OnSky Alert Necklace. Silakan periksa.`
+  > `Mendeteksi pengguna memasuki Zona Aman oleh OnSky Alert Pendant. Silakan periksa.`
 
 - **Tiếng Nhật (ja-JP):**
-  > `OnSky Alert Necklaceがセーフティゾーンへの進入を検知しました。ご確認ください。`
+  > `OnSky Alert Pendantがセーフティゾーンへの進入を検知しました。ご確認ください。`
 
 - **Tiếng Hàn (ko-KR):**
-  > `OnSky Alert Necklace에서 사용자가 안전 구역에 진입했음을 감지했습니다. 확인해 주세요.`
+  > `OnSky Alert Pendant에서 사용자가 안전 구역에 진입했음을 감지했습니다. 확인해 주세요.`
 
 - **Tiếng Tây Ban Nha (es-ES):**
-  > `Detección de usuario entrando en la Zona Segura por OnSky Alert Necklace. Por favor revise.`
+  > `Detección de usuario entrando en la Zona Segura por OnSky Alert Pendant. Por favor revise.`
 
 - **Tiếng Thái (th-TH):**
-  > `ตรวจพบผู้ใช้เข้าสู่พื้นที่ปลอดภัยโดย OnSky Alert Necklace กรุณาตรวจสอบ`
+  > `ตรวจพบผู้ใช้เข้าสู่พื้นที่ปลอดภัยโดย OnSky Alert Pendant กรุณาตรวจสอบ`
 
 - **Tiếng Filipino (fil-PH):**
-  > `Nakakita na ang gumagamit ay pumasok sa Safety Zone mula sa OnSky Alert Necklace. Pakisuri.`
+  > `Nakakita na ang gumagamit ay pumasok sa Safety Zone mula sa OnSky Alert Pendant. Pakisuri.`
 
 ---
 
 ### 2.4. SkySOSGeofenceExit (Đi Ra Khỏi Vùng An Toàn (Geofence Exit))
 
 - **Tiếng Anh (en-US):**
-  > `Detect user exiting the Safety Zone by OnSky Alert Necklace. Please check.`
+  > `Detect user exiting the Safety Zone by OnSky Alert Pendant. Please check.`
 
 - **Tiếng Việt (vi-VN):**
-  > `Phát hiện người dùng rời khỏi vùng an toàn từ OnSky Alert Necklace. Vui lòng kiểm tra.`
+  > `Phát hiện người dùng rời khỏi vùng an toàn từ OnSky Alert Pendant. Vui lòng kiểm tra.`
 
 - **Tiếng Trung Giản thể (zh-Hans):**
-  > `检测到用户离开OnSky Alert Necklace设定的安全区域。请检查。`
+  > `检测到用户离开OnSky Alert Pendant设定的安全区域。请检查。`
 
 - **Tiếng Trung Phồn thể (zh-Hant):**
-  > `檢測到用戶離開OnSky Alert Necklace設定的安全區域。請檢查。`
+  > `檢測到用戶離開OnSky Alert Pendant設定的安全區域。請檢查。`
 
 - **Tiếng Pháp (fr-FR):**
-  > `Détection de la sortie de l'utilisateur de la zone de sécurité par l'OnSky Alert Necklace. Veuillez vérifier.`
+  > `Détection de la sortie de l'utilisateur de la zone de sécurité par l'OnSky Alert Pendant. Veuillez vérifier.`
 
 - **Tiếng Đức (de-DE):**
-  > `Benutzer verlässt die Sicherheitszone laut OnSky Alert Necklace. Bitte prüfen.`
+  > `Benutzer verlässt die Sicherheitszone laut OnSky Alert Pendant. Bitte prüfen.`
 
 - **Tiếng Indonesia (id-ID):**
-  > `Mendeteksi pengguna keluar dari Zona Aman oleh OnSky Alert Necklace. Silakan periksa.`
+  > `Mendeteksi pengguna keluar dari Zona Aman oleh OnSky Alert Pendant. Silakan periksa.`
 
 - **Tiếng Nhật (ja-JP):**
-  > `OnSky Alert Necklaceがセーフティゾーンからの退出を検知しました。ご確認ください。`
+  > `OnSky Alert Pendantがセーフティゾーンからの退出を検知しました。ご確認ください。`
 
 - **Tiếng Hàn (ko-KR):**
-  > `OnSky Alert Necklace에서 사용자가 안전 구역을 벗어났음을 감지했습니다. 확인해 주세요.`
+  > `OnSky Alert Pendant에서 사용자가 안전 구역을 벗어났음을 감지했습니다. 확인해 주세요.`
 
 - **Tiếng Tây Ban Nha (es-ES):**
-  > `Detección de usuario saliendo de la Zona Segura por OnSky Alert Necklace. Por favor revise.`
+  > `Detección de usuario saliendo de la Zona Segura por OnSky Alert Pendant. Por favor revise.`
 
 - **Tiếng Thái (th-TH):**
-  > `ตรวจพบผู้ใช้ออกจากพื้นที่ปลอดภัยโดย OnSky Alert Necklace กรุณาตรวจสอบ`
+  > `ตรวจพบผู้ใช้ออกจากพื้นที่ปลอดภัยโดย OnSky Alert Pendant กรุณาตรวจสอบ`
 
 - **Tiếng Filipino (fil-PH):**
-  > `Nakakita na ang gumagamit ay lumabas sa Safety Zone mula sa OnSky Alert Necklace. Pakisuri.`
+  > `Nakakita na ang gumagamit ay lumabas sa Safety Zone mula sa OnSky Alert Pendant. Pakisuri.`
 
 ---
 
 ### 2.5. SkySOSDeviceMoving (Người Dùng Đang Di Chuyển (Device Moving))
 
 - **Tiếng Anh (en-US):**
-  > `Detect user moving by OnSky Alert Necklace.`
+  > `Detect user moving by OnSky Alert Pendant.`
 
 - **Tiếng Việt (vi-VN):**
-  > `Phát hiện người dùng đang di chuyển từ OnSky Alert Necklace.`
+  > `Phát hiện người dùng đang di chuyển từ OnSky Alert Pendant.`
 
 - **Tiếng Trung Giản thể (zh-Hans):**
-  > `检测到来自OnSky Alert Necklace的用户移动状态。`
+  > `检测到来自OnSky Alert Pendant的用户移动状态。`
 
 - **Tiếng Trung Phồn thể (zh-Hant):**
-  > `檢測到來自OnSky Alert Necklace的用戶移動狀態。`
+  > `檢測到來自OnSky Alert Pendant的用戶移動狀態。`
 
 - **Tiếng Pháp (fr-FR):**
-  > `Détection de mouvements de l'utilisateur par l'OnSky Alert Necklace.`
+  > `Détection de mouvements de l'utilisateur par l'OnSky Alert Pendant.`
 
 - **Tiếng Đức (de-DE):**
-  > `Benutzerbewegung von OnSky Alert Necklace erkannt.`
+  > `Benutzerbewegung von OnSky Alert Pendant erkannt.`
 
 - **Tiếng Indonesia (id-ID):**
-  > `Mendeteksi pengguna sedang bergerak oleh OnSky Alert Necklace.`
+  > `Mendeteksi pengguna sedang bergerak oleh OnSky Alert Pendant.`
 
 - **Tiếng Nhật (ja-JP):**
-  > `OnSky Alert Necklaceが利用者の移動を検知しました。`
+  > `OnSky Alert Pendantが利用者の移動を検知しました。`
 
 - **Tiếng Hàn (ko-KR):**
-  > `OnSky Alert Necklace에서 사용자의 이동이 감지되었습니다.`
+  > `OnSky Alert Pendant에서 사용자의 이동이 감지되었습니다.`
 
 - **Tiếng Tây Ban Nha (es-ES):**
-  > `Detección de movimiento del usuario por OnSky Alert Necklace.`
+  > `Detección de movimiento del usuario por OnSky Alert Pendant.`
 
 - **Tiếng Thái (th-TH):**
-  > `ตรวจพบผู้ใช้กำลังเคลื่อนไหวโดย OnSky Alert Necklace`
+  > `ตรวจพบผู้ใช้กำลังเคลื่อนไหวโดย OnSky Alert Pendant`
 
 - **Tiếng Filipino (fil-PH):**
-  > `Nakakita na ang gumagamit ay kumikilos mula sa OnSky Alert Necklace.`
+  > `Nakakita na ang gumagamit ay kumikilos mula sa OnSky Alert Pendant.`
 
 ---
 
 ### 2.6. SkySOSDeviceStopped (Người Dùng Đã Dừng Lại (Device Stopped))
 
 - **Tiếng Anh (en-US):**
-  > `Detect user stopped by OnSky Alert Necklace.`
+  > `Detect user stopped by OnSky Alert Pendant.`
 
 - **Tiếng Việt (vi-VN):**
-  > `Phát hiện người dùng đã dừng lại từ OnSky Alert Necklace.`
+  > `Phát hiện người dùng đã dừng lại từ OnSky Alert Pendant.`
 
 - **Tiếng Trung Giản thể (zh-Hans):**
-  > `检测到来自OnSky Alert Necklace的用户静止/停止移动状态。`
+  > `检测到来自OnSky Alert Pendant的用户静止/停止移动状态。`
 
 - **Tiếng Trung Phồn thể (zh-Hant):**
-  > `檢測到來自OnSky Alert Necklace的用戶靜止/停止移動狀態。`
+  > `檢測到來自OnSky Alert Pendant的用戶靜止/停止移動狀態。`
 
 - **Tiếng Pháp (fr-FR):**
-  > `Détection de l'arrêt de l'utilisateur par l'OnSky Alert Necklace.`
+  > `Détection de l'arrêt de l'utilisateur par l'OnSky Alert Pendant.`
 
 - **Tiếng Đức (de-DE):**
-  > `Benutzer hat angehalten laut OnSky Alert Necklace.`
+  > `Benutzer hat angehalten laut OnSky Alert Pendant.`
 
 - **Tiếng Indonesia (id-ID):**
-  > `Mendeteksi pengguna telah berhenti oleh OnSky Alert Necklace.`
+  > `Mendeteksi pengguna telah berhenti oleh OnSky Alert Pendant.`
 
 - **Tiếng Nhật (ja-JP):**
-  > `OnSky Alert Necklaceが利用者の停止を検知しました。`
+  > `OnSky Alert Pendantが利用者の停止を検知しました。`
 
 - **Tiếng Hàn (ko-KR):**
-  > `OnSky Alert Necklace에서 사용자가 멈추었음을 감지했습니다.`
+  > `OnSky Alert Pendant에서 사용자가 멈추었음을 감지했습니다.`
 
 - **Tiếng Tây Ban Nha (es-ES):**
-  > `Detección de usuario detenido por OnSky Alert Necklace.`
+  > `Detección de usuario detenido por OnSky Alert Pendant.`
 
 - **Tiếng Thái (th-TH):**
-  > `ตรวจพบผู้ใช้หยุดเคลื่อนไหวโดย OnSky Alert Necklace`
+  > `ตรวจพบผู้ใช้หยุดเคลื่อนไหวโดย OnSky Alert Pendant`
 
 - **Tiếng Filipino (fil-PH):**
-  > `Nakakita na ang gumagamit ay huminto mula sa OnSky Alert Necklace.`
+  > `Nakakita na ang gumagamit ay huminto mula sa OnSky Alert Pendant.`
 
 ---
 

@@ -22,7 +22,7 @@ var expectedLocales = []string{
 	"fil-PH",
 }
 
-// requiredAlerts kiểm tra tất cả các cảnh báo được định nghĩa trong Alerts map
+// requiredAlerts verifies all alerts defined in Alerts map
 var requiredAlerts = []model.NotificationType{
 	model.BedSensorSOS,
 	model.BedSensorHeartStop,
@@ -79,14 +79,14 @@ func TestAllLocalesRegistered(t *testing.T) {
 			t.Errorf("Locale %s has empty labels", code)
 		}
 
-		// Kiểm tra toàn bộ các alert bắt buộc
+		// Verify all required alerts are defined
 		for _, alertType := range requiredAlerts {
 			if _, ok := b.Alerts[alertType]; !ok {
 				t.Errorf("Locale %s is missing alert translation for %v", code, alertType)
 			}
 		}
 
-		// Kiểm tra toàn bộ các alert của BedSensor, SkySOS, SkyBand phải có Action và ServiceHeader riêng
+		// Verify all BedSensor, SkySOS, SkyBand alerts have dedicated Action and ServiceHeader
 		medicalAndAlertTypes := []model.NotificationType{
 			model.BedSensorSOS,
 			model.BedSensorHeartStop,
@@ -119,32 +119,64 @@ func TestAllLocalesRegistered(t *testing.T) {
 				t.Errorf("Locale %s is missing service header for %v", code, alertType)
 			}
 		}
+
+		if b.DefaultNotification == "" {
+			t.Errorf("Locale %s has empty DefaultNotification", code)
+		}
+		requiredNotifications := []model.NotificationType{
+			model.BedSensorSOS,
+			model.BedSensorHeartStop,
+			model.BedSensorBreathStop,
+			model.BedSensorTachycardia,
+			model.BedSensorBradycardia,
+			model.BedSensorSeizure,
+			model.BedSensorBodyTempHeight,
+			model.BedSensorRoomTempHeight,
+			model.BedSensorHumidityHeight,
+			model.BedSensorHeartRateHeight,
+			model.BedSensorHeartRateLow,
+			model.BedSensorBedLeaving,
+			model.BedSensorCrying,
+			model.SkySOSButtonTriggered,
+			model.SkySOSFallDetection,
+			model.SkySOSGeofenceEnter,
+			model.SkySOSGeofenceExit,
+			model.SkySOSDeviceMoving,
+			model.SkySOSDeviceStopped,
+			model.SkyBandSpo2Low,
+			model.SkyBandHeartRateLow,
+			model.SkyBandHeartRateHeight,
+		}
+		for _, notiType := range requiredNotifications {
+			if msg, ok := b.Notifications[notiType]; !ok || msg == "" {
+				t.Errorf("Locale %s is missing notification translation for %v", code, notiType)
+			}
+		}
 	}
 }
 
 func TestGetBundleFallback(t *testing.T) {
-	// Locale không tồn tại phải fallback về en-US
+	// Non-existent locale must fallback to en-US
 	fallback := locales.GetBundle("non-existent-locale")
 	if fallback == nil || fallback.Code != "en-US" {
 		t.Fatalf("Expected fallback to en-US, got %v", fallback)
 	}
 
-	// Chuỗi rỗng phải fallback về en-US
+	// Empty string must fallback to en-US
 	emptyFallback := locales.GetBundle("")
 	if emptyFallback == nil || emptyFallback.Code != "en-US" {
 		t.Fatalf("Expected fallback to en-US for empty locale, got %v", emptyFallback)
 	}
 
-	// Case insensitive và thay thế _ bằng -
+	// Case-insensitive and replace _ with -
 	jp := locales.GetBundle("JA_jp")
 	if jp == nil || jp.Code != "ja-JP" {
 		t.Errorf("Expected ja-JP, got %v", jp)
 	}
 
-	// Prefix fallback (vd "fr" -> "fr-FR")
+	// Language prefix fallback (e.g. "fr" -> "fr-FR")
 	fr := locales.GetBundle("fr")
 	if fr == nil || fr.Code != "fr-FR" {
 		t.Errorf("Expected fr-FR, got %v", fr)
 	}
 }
-

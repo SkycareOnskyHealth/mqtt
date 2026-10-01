@@ -2,27 +2,28 @@ package locales
 
 import "github.com/SkycareOnskyHealth/rbac/model"
 
-// Labels chứa các nhãn cố định trong message template
+// Labels contains fixed labels used in message templates
 type Labels struct {
-	PhoneLabel  string // en: "phone", vi: "SDT"
-	DeviceLabel string // en: "device", vi: "thiet bi"
-	OnDateLabel string // en: "on", vi: "Vao ngay"
-	AtTimeLabel string // en: "at", vi: "luc"
-	OfLabel     string // en: " of ", vi: " cua "
-	AtLabel     string // en: "at", vi: "tai"
-	ZoneLabel   string // en: "zone", vi: "khu"
+	PhoneLabel  string // e.g. "phone", "SDT"
+	DeviceLabel string // e.g. "device", "thiet bi"
+	OnDateLabel string // e.g. "on", "Vao ngay"
+	AtTimeLabel string // e.g. "at", "luc"
+	OfLabel     string // e.g. " of ", " cua "
+	AtLabel     string // e.g. "at", "tai"
+	ZoneLabel   string // e.g. "zone", "khu"
 }
 
-// Bundle chứa toàn bộ từ điển và cấu hình của một ngôn ngữ
+// Bundle contains dictionary and localization configuration for a specific language
 type Bundle struct {
-	Code            string                            // Mã chuẩn BCP 47 (ví dụ "en-US", "vi-VN")
-	DefaultTimezone string                            // Timezone mặc định của khu vực
-	Labels          Labels                            // Nhãn từ ngữ
-	ServiceHeaders  map[model.NotificationType]string // Header theo loại cảnh báo
-	Alerts          map[model.NotificationType]string // Chuỗi mô tả cảnh báo
-	Actions         map[model.NotificationType]string // Lời kêu gọi hành động ("Please check" / "Check Now!")
-	DefaultHeader   string                            // Fallback header (ví dụ "OnSky Security & Safety service")
-	DefaultAlert    string                            // Fallback alert (ví dụ "Intruder detected in")
-	DefaultAction   string                            // Fallback action (ví dụ "Check Now!")
+	Code                string                            // BCP 47 language tag (e.g. "en-US", "vi-VN")
+	DefaultTimezone     string                            // Default timezone for the locale/region
+	Labels              Labels                            // Common word labels
+	ServiceHeaders      map[model.NotificationType]string // Service header mapping per notification type
+	Alerts              map[model.NotificationType]string // Alert description strings per notification type
+	Actions             map[model.NotificationType]string // Call-to-action text ("Please check" / "Check Now!")
+	DefaultHeader       string                            // Fallback header (e.g. "OnSky Security & Safety service")
+	DefaultAlert        string                            // Fallback alert description (e.g. "Intruder detected in")
+	DefaultAction       string                            // Fallback action text (e.g. "Check Now!")
+	Notifications       map[model.NotificationType]string // Short push / in-app notification messages
+	DefaultNotification string                            // Fallback notification message
 }
-

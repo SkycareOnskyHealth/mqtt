@@ -602,165 +602,165 @@ Khác với thông báo tin nhắn thông thường (SMS/Push Notification), n�
 
 ---
 
-## 3. Thiết Bị SkySOS (Dây Chuyền Khẩn Cấp / Alert Necklace)
+## 3. Thiết Bị SkySOS (Dây Chuyền Khẩn Cấp / Alert Pendant)
 
 ### 3.1. SkySOSButtonTriggered (Bấm Nút SOS Khẩn Cấp)
 
 - **Tiếng Anh (en-US):**
-  > `OnSky Alert service. Possible SOS Emergency Alert from OnSky Alert Pendent. Please check.`
+  > `OnSky Alert service. Possible SOS Emergency Alert from OnSky Alert Pendant. Please check.`
 
 - **Tiếng Việt (vi-VN):**
-  > `Dịch vụ cảnh báo OnSky. Canh bao khan cap SOS tu OnSky Alert Pendent. Vui long kiem tra.`
+  > `Dịch vụ cảnh báo OnSky. Canh bao khan cap SOS tu OnSky Alert Pendant. Vui long kiem tra.`
 
 - **Tiếng Trung Giản thể (zh-Hans):**
-  > `OnSky警报服务。OnSky Alert Pendent发出疑似SOS紧急警报。 请检查。`
+  > `OnSky警报服务。OnSky Alert Pendant发出疑似SOS紧急警报。 请检查。`
 
 - **Tiếng Trung Phồn thể (zh-Hant):**
-  > `OnSky警報服務。OnSky Alert Pendent發出疑似SOS緊急警報。 請檢查。`
+  > `OnSky警報服務。OnSky Alert Pendant發出疑似SOS緊急警報。 請檢查。`
 
 - **Tiếng Pháp (fr-FR):**
-  > `Service d'alerte OnSky. Alerte d'urgence SOS possible de l'OnSky Alert Pendent. Veuillez vérifier.`
+  > `Service d'alerte OnSky. Alerte d'urgence SOS possible de l'OnSky Alert Pendant. Veuillez vérifier.`
 
 - **Tiếng Đức (de-DE):**
-  > `OnSky Warndienst. Möglicher SOS-Notfallalarm von OnSky Alert Pendent. Bitte prüfen.`
+  > `OnSky Warndienst. Möglicher SOS-Notfallalarm von OnSky Alert Pendant. Bitte prüfen.`
 
 - **Tiếng Indonesia (id-ID):**
-  > `Layanan Peringatan OnSky. Kemungkinan Peringatan Darurat SOS dari OnSky Alert Pendent. Silakan periksa.`
+  > `Layanan Peringatan OnSky. Kemungkinan Peringatan Darurat SOS dari OnSky Alert Pendant. Silakan periksa.`
 
 - **Tiếng Nhật (ja-JP):**
-  > `OnSkyアラートサービス。OnSky Alert PendentからSOS緊急アラートを検知しました。 ご確認ください。`
+  > `OnSkyアラートサービス。OnSky Alert PendantからSOS緊急アラートを検知しました。 ご確認ください。`
 
 - **Tiếng Hàn (ko-KR):**
-  > `OnSky 알림 서비스. OnSky Alert Pendent에서 SOS 긴급 알림 감지. 확인해 주세요.`
+  > `OnSky 알림 서비스. OnSky Alert Pendant에서 SOS 긴급 알림 감지. 확인해 주세요.`
 
 - **Tiếng Tây Ban Nha (es-ES):**
-  > `Servicio de alerta OnSky. Posible alerta de emergencia SOS de OnSky Alert Pendent. Por favor revise.`
+  > `Servicio de alerta OnSky. Posible alerta de emergencia SOS de OnSky Alert Pendant. Por favor revise.`
 
 - **Tiếng Thái (th-TH):**
-  > `บริการแจ้งเตือน OnSky อาจมีการแจ้งเตือนฉุกเฉิน SOS จาก OnSky Alert Pendent กรุณาตรวจสอบ`
+  > `บริการแจ้งเตือน OnSky อาจมีการแจ้งเตือนฉุกเฉิน SOS จาก OnSky Alert Pendant กรุณาตรวจสอบ`
 
 - **Tiếng Filipino (fil-PH):**
-  > `Serbisyong Alerto ng OnSky. Posibleng SOS Emergency Alert mula sa OnSky Alert Pendent. Pakisuri.`
+  > `Serbisyong Alerto ng OnSky. Posibleng SOS Emergency Alert mula sa OnSky Alert Pendant. Pakisuri.`
 
 ---
 
 ### 3.2. SkySOSFallDetection (Phát Hiện Té Ngã)
 
 - **Tiếng Anh (en-US):**
-  > `OnSky Alert service. Detect fall from OnSky Alert Pendent. Please check.`
+  > `OnSky Alert service. Detect fall from OnSky Alert Pendant. Please check.`
 
 - **Tiếng Việt (vi-VN):**
-  > `Dịch vụ cảnh báo OnSky. Phat hien te nga tu OnSky Alert Pendent. Vui long kiem tra.`
+  > `Dịch vụ cảnh báo OnSky. Phat hien te nga tu OnSky Alert Pendant. Vui long kiem tra.`
 
 - **Tiếng Trung Giản thể (zh-Hans):**
-  > `OnSky警报服务。OnSky Alert Pendent检测到跌倒。 请检查。`
+  > `OnSky警报服务。OnSky Alert Pendant检测到跌倒。 请检查。`
 
 - **Tiếng Trung Phồn thể (zh-Hant):**
-  > `OnSky警報服務。OnSky Alert Pendent檢測到跌倒。 請檢查。`
+  > `OnSky警報服務。OnSky Alert Pendant檢測到跌倒。 請檢查。`
 
 - **Tiếng Pháp (fr-FR):**
-  > `Service d'alerte OnSky. Chute détectée par l'OnSky Alert Pendent. Veuillez vérifier.`
+  > `Service d'alerte OnSky. Chute détectée par l'OnSky Alert Pendant. Veuillez vérifier.`
 
 - **Tiếng Đức (de-DE):**
-  > `OnSky Warndienst. Sturz erkannt von OnSky Alert Pendent. Bitte prüfen.`
+  > `OnSky Warndienst. Sturz erkannt von OnSky Alert Pendant. Bitte prüfen.`
 
 - **Tiếng Indonesia (id-ID):**
-  > `Layanan Peringatan OnSky. Mendeteksi jatuh dari OnSky Alert Pendent. Silakan periksa.`
+  > `Layanan Peringatan OnSky. Mendeteksi jatuh dari OnSky Alert Pendant. Silakan periksa.`
 
 - **Tiếng Nhật (ja-JP):**
-  > `OnSkyアラートサービス。OnSky Alert Pendentが転倒を検知しました。 ご確認ください。`
+  > `OnSkyアラートサービス。OnSky Alert Pendantが転倒を検知しました。 ご確認ください。`
 
 - **Tiếng Hàn (ko-KR):**
-  > `OnSky 알림 서비스. OnSky Alert Pendent에서 낙상 감지. 확인해 주세요.`
+  > `OnSky 알림 서비스. OnSky Alert Pendant에서 낙상 감지. 확인해 주세요.`
 
 - **Tiếng Tây Ban Nha (es-ES):**
-  > `Servicio de alerta OnSky. Detección de caída de OnSky Alert Pendent. Por favor revise.`
+  > `Servicio de alerta OnSky. Detección de caída de OnSky Alert Pendant. Por favor revise.`
 
 - **Tiếng Thái (th-TH):**
-  > `บริการแจ้งเตือน OnSky ตรวจพบการหกล้มจาก OnSky Alert Pendent กรุณาตรวจสอบ`
+  > `บริการแจ้งเตือน OnSky ตรวจพบการหกล้มจาก OnSky Alert Pendant กรุณาตรวจสอบ`
 
 - **Tiếng Filipino (fil-PH):**
-  > `Serbisyong Alerto ng OnSky. Nakakita ng pagkahulog mula sa OnSky Alert Pendent. Pakisuri.`
+  > `Serbisyong Alerto ng OnSky. Nakakita ng pagkahulog mula sa OnSky Alert Pendant. Pakisuri.`
 
 ---
 
 ### 3.3. SkySOSGeofenceEnter (Đi Vào Vùng An Toàn)
 
 - **Tiếng Anh (en-US):**
-  > `OnSky Alert service. Detect user entering Safety Zone by OnSky device Alert Pendent. Please check.`
+  > `OnSky Alert service. Detect user entering Safety Zone by OnSky device Alert Pendant. Please check.`
 
 - **Tiếng Việt (vi-VN):**
-  > `Dịch vụ cảnh báo OnSky. Phat hien nguoi dung di vao vung an toan tu OnSky Alert Pendent. Vui long kiem tra.`
+  > `Dịch vụ cảnh báo OnSky. Phat hien nguoi dung di vao vung an toan tu OnSky Alert Pendant. Vui long kiem tra.`
 
 - **Tiếng Trung Giản thể (zh-Hans):**
-  > `OnSky警报服务。OnSky Alert Pendent检测到用户进入安全区域。 请检查。`
+  > `OnSky警报服务。OnSky Alert Pendant检测到用户进入安全区域。 请检查。`
 
 - **Tiếng Trung Phồn thể (zh-Hant):**
-  > `OnSky警報服務。OnSky Alert Pendent檢測到用戶進入安全區域。 請檢查。`
+  > `OnSky警報服務。OnSky Alert Pendant檢測到用戶進入安全區域。 請檢查。`
 
 - **Tiếng Pháp (fr-FR):**
-  > `Service d'alerte OnSky. L'utilisateur entre dans la zone de sécurité selon l'OnSky Alert Pendent. Veuillez vérifier.`
+  > `Service d'alerte OnSky. L'utilisateur entre dans la zone de sécurité selon l'OnSky Alert Pendant. Veuillez vérifier.`
 
 - **Tiếng Đức (de-DE):**
-  > `OnSky Warndienst. Benutzer betritt Sicherheitszone laut OnSky Alert Pendent. Bitte prüfen.`
+  > `OnSky Warndienst. Benutzer betritt Sicherheitszone laut OnSky Alert Pendant. Bitte prüfen.`
 
 - **Tiếng Indonesia (id-ID):**
-  > `Layanan Peringatan OnSky. Mendeteksi pengguna memasuki Zona Aman oleh OnSky Alert Pendent. Silakan periksa.`
+  > `Layanan Peringatan OnSky. Mendeteksi pengguna memasuki Zona Aman oleh OnSky Alert Pendant. Silakan periksa.`
 
 - **Tiếng Nhật (ja-JP):**
-  > `OnSkyアラートサービス。OnSky Alert Pendentがセーフティゾーンへの進入を検知しました。 ご確認ください。`
+  > `OnSkyアラートサービス。OnSky Alert Pendantがセーフティゾーンへの進入を検知しました。 ご確認ください。`
 
 - **Tiếng Hàn (ko-KR):**
-  > `OnSky 알림 서비스. OnSky Alert Pendent에서 사용자가 안전 구역에 진입했음을 감지. 확인해 주세요.`
+  > `OnSky 알림 서비스. OnSky Alert Pendant에서 사용자가 안전 구역에 진입했음을 감지. 확인해 주세요.`
 
 - **Tiếng Tây Ban Nha (es-ES):**
-  > `Servicio de alerta OnSky. Detección de usuario entrando en la Zona Segura por OnSky Alert Pendent. Por favor revise.`
+  > `Servicio de alerta OnSky. Detección de usuario entrando en la Zona Segura por OnSky Alert Pendant. Por favor revise.`
 
 - **Tiếng Thái (th-TH):**
-  > `บริการแจ้งเตือน OnSky ตรวจพบผู้ใช้เข้าสู่พื้นที่ปลอดภัยโดย OnSky Alert Pendent กรุณาตรวจสอบ`
+  > `บริการแจ้งเตือน OnSky ตรวจพบผู้ใช้เข้าสู่พื้นที่ปลอดภัยโดย OnSky Alert Pendant กรุณาตรวจสอบ`
 
 - **Tiếng Filipino (fil-PH):**
-  > `Serbisyong Alerto ng OnSky. Nakakita na ang gumagamit ay pumasok sa Safety Zone mula sa OnSky Alert Pendent. Pakisuri.`
+  > `Serbisyong Alerto ng OnSky. Nakakita na ang gumagamit ay pumasok sa Safety Zone mula sa OnSky Alert Pendant. Pakisuri.`
 
 ---
 
 ### 3.4. SkySOSGeofenceExit (Đi Ra Khỏi Vùng An Toàn)
 
 - **Tiếng Anh (en-US):**
-  > `OnSky Alert service. Detect user exiting Safety Zone by OnSky device Alert Pendent. Please check.`
+  > `OnSky Alert service. Detect user exiting Safety Zone by OnSky device Alert Pendant. Please check.`
 
 - **Tiếng Việt (vi-VN):**
-  > `Dịch vụ cảnh báo OnSky. Phat hien nguoi dung di ra khoi vung an toan tu OnSky Alert Pendent. Vui long kiem tra.`
+  > `Dịch vụ cảnh báo OnSky. Phat hien nguoi dung di ra khoi vung an toan tu OnSky Alert Pendant. Vui long kiem tra.`
 
 - **Tiếng Trung Giản thể (zh-Hans):**
-  > `OnSky警报服务。OnSky Alert Pendent检测到用户离开安全区域。 请检查。`
+  > `OnSky警报服务。OnSky Alert Pendant检测到用户离开安全区域。 请检查。`
 
 - **Tiếng Trung Phồn thể (zh-Hant):**
-  > `OnSky警報服務。OnSky Alert Pendent檢測到用戶離開安全區域。 請檢查。`
+  > `OnSky警報服務。OnSky Alert Pendant檢測到用戶離開安全區域。 請檢查。`
 
 - **Tiếng Pháp (fr-FR):**
-  > `Service d'alerte OnSky. L'utilisateur quitte la zone de sécurité selon l'OnSky Alert Pendent. Veuillez vérifier.`
+  > `Service d'alerte OnSky. L'utilisateur quitte la zone de sécurité selon l'OnSky Alert Pendant. Veuillez vérifier.`
 
 - **Tiếng Đức (de-DE):**
-  > `OnSky Warndienst. Benutzer verlässt Sicherheitszone laut OnSky Alert Pendent. Bitte prüfen.`
+  > `OnSky Warndienst. Benutzer verlässt Sicherheitszone laut OnSky Alert Pendant. Bitte prüfen.`
 
 - **Tiếng Indonesia (id-ID):**
-  > `Layanan Peringatan OnSky. Mendeteksi pengguna keluar dari Zona Aman oleh OnSky Alert Pendent. Silakan periksa.`
+  > `Layanan Peringatan OnSky. Mendeteksi pengguna keluar dari Zona Aman oleh OnSky Alert Pendant. Silakan periksa.`
 
 - **Tiếng Nhật (ja-JP):**
-  > `OnSkyアラートサービス。OnSky Alert Pendentがセーフティゾーンからの退出を検知しました。 ご確認ください。`
+  > `OnSkyアラートサービス。OnSky Alert Pendantがセーフティゾーンからの退出を検知しました。 ご確認ください。`
 
 - **Tiếng Hàn (ko-KR):**
-  > `OnSky 알림 서비스. OnSky Alert Pendent에서 사용자가 안전 구역을 벗어났음을 감지. 확인해 주세요.`
+  > `OnSky 알림 서비스. OnSky Alert Pendant에서 사용자가 안전 구역을 벗어났음을 감지. 확인해 주세요.`
 
 - **Tiếng Tây Ban Nha (es-ES):**
-  > `Servicio de alerta OnSky. Detección de usuario saliendo de la Zona Segura por OnSky Alert Pendent. Por favor revise.`
+  > `Servicio de alerta OnSky. Detección de usuario saliendo de la Zona Segura por OnSky Alert Pendant. Por favor revise.`
 
 - **Tiếng Thái (th-TH):**
-  > `บริการแจ้งเตือน OnSky ตรวจพบผู้ใช้ออกจากพื้นที่ปลอดภัยโดย OnSky Alert Pendent กรุณาตรวจสอบ`
+  > `บริการแจ้งเตือน OnSky ตรวจพบผู้ใช้ออกจากพื้นที่ปลอดภัยโดย OnSky Alert Pendant กรุณาตรวจสอบ`
 
 - **Tiếng Filipino (fil-PH):**
-  > `Serbisyong Alerto ng OnSky. Nakakita na ang gumagamit ay lumabas sa Safety Zone mula sa OnSky Alert Pendent. Pakisuri.`
+  > `Serbisyong Alerto ng OnSky. Nakakita na ang gumagamit ay lumabas sa Safety Zone mula sa OnSky Alert Pendant. Pakisuri.`
 
 ---
 

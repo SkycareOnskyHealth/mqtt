@@ -394,6 +394,18 @@ func PrepareMedia(templateType model.NotificationType, locale string) string {
 	return fmt.Sprintf("?safety=%s&locale=%s", callType, locale)
 }
 
+// PrepareNotificationMessage prepare short push / in-app notification message for any locale
+func PrepareNotificationMessage(templateType model.NotificationType, locale string) string {
+	bundle := locales.GetBundle(locale)
+	if bundle == nil {
+		return ""
+	}
+	if msg, ok := bundle.Notifications[templateType]; ok {
+		return msg
+	}
+	return bundle.DefaultNotification
+}
+
 // Connect to the broker
 func Connect(url, clientID, username, password string) (MQTT.Client, error) {
 	options := MQTT.NewClientOptions().SetClientID(clientID).AddBroker(url) //! Use for demo
