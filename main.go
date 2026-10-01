@@ -10,6 +10,7 @@ import (
 	"time"
 	"unicode"
 
+	"github.com/SkycareOnskyHealth/mqtt/locales"
 	"github.com/SkycareOnskyHealth/rbac/model"
 	proto "github.com/SkycareOnskyHealth/rbac/proto/calling"
 	notifyProto "github.com/SkycareOnskyHealth/rbac/proto/simple-notification"
@@ -176,20 +177,11 @@ func FindModeValue(array []*proto.Property, name string) int {
 
 // GetTimeZone get time zone from locale string
 func GetTimeZone(locale string) string {
-	timezone := "Asia/Ho_Chi_Minh"
-	if locale == "" {
-		return timezone
+	bundle := locales.GetBundle(locale)
+	if bundle != nil && bundle.DefaultTimezone != "" {
+		return bundle.DefaultTimezone
 	}
-	switch locale {
-	case "en-US":
-		timezone = "America/Mazatlan"
-		break
-	case "vi-VN":
-		break
-	default:
-		break
-	}
-	return timezone
+	return TimeZone
 }
 
 // IsMn is mn rune
@@ -298,385 +290,54 @@ func ConvertMode(mode string) model.Mode {
 
 // PrepareResourceLocale prepare text message for any locale
 func PrepareResourceLocale(templateType model.NotificationType, key string, locale string, gatewayName string, deviceName string, zoneName string, date string, timestamp string, fullName string) string {
-	switch locale {
-	case "en-US":
-		switch key {
-		case "onsky_security":
-			switch templateType {
-			case model.BedSensorAbnormalVitalSigns:
-				return "OnSky Medical Alert service"
-			case model.SafetyBreachSOS:
-				return "OnSky Medical Alert service"
-			case model.BedSensorSOS:
-				return "OnSky Medical Alert service"
-			case model.BedSensorHeartStop:
-				return "OnSky Medical Alert service"
-			case model.BedSensorBreathStop:
-				return "OnSky Medical Alert service"
-			case model.BedSensorTachycardia:
-				return "OnSky Medical Alert service"
-			case model.BedSensorBradycardia:
-				return "OnSky Medical Alert service"
-			case model.BedSensorSeizure:
-				return "OnSky Medical Alert service"
-			case model.BedSensorBodyTempHeight:
-				return "OnSky Medical Alert service"
-			case model.BedSensorRoomTempHeight:
-				return "OnSky Medical Alert service"
-			case model.BedSensorHumidityHeight:
-				return "OnSky Medical Alert service"
-			case model.BedSensorHeartRateHeight:
-				return "OnSky Medical Alert service"
-			case model.BedSensorHeartRateLow:
-				return "OnSky Medical Alert service"
-			case model.BedSensorBedLeaving:
-				return "OnSky Medical Alert service"
-			case model.BedSensorCrying:
-				return "OnSky Medical Alert service"
-			case model.SkyBandSpo2Low:
-				return "OnSky Alert service"
-			case model.SkyBandHeartRateLow:
-				return "OnSky Alert service"
-			case model.SkyBandHeartRateHeight:
-				return "OnSky Alert service"
-			case model.SkySOSButtonTriggered:
-				return "OnSky Alert service"
-			case model.SkySOSFallDetection:
-				return "OnSky Alert service"
-			case model.SkySOSGeofenceEnter:
-				return "OnSky Alert service"
-			case model.SkySOSGeofenceExit:
-				return "OnSky Alert service"
-			default:
-				return "OnSky Security & Safety service"
-			}
-		case "zone":
-			return "zone"
-		case "phone":
-			return "phone"
-		case "gateway_name":
-			return gatewayName
-		case "zone_name":
-			return zoneName
-		case "device":
-			return "device"
-		case "device_name":
-			return deviceName
-		case "on_date":
-			return "on"
-		case "date":
-			return date
-		case "of":
-			return " of "
-		case "at":
-			return "at"
-		case "at_time":
-			return "at"
-		case "full_name":
-			return fullName + " "
-		case "time":
-			return timestamp
-		case "please_check":
-			switch templateType {
-			case model.SafetyBreachSOS:
-				return "Please check"
-			case model.BedSensorSOS:
-				return "Please check"
-			case model.BedSensorHeartStop:
-				return "Please check"
-			case model.BedSensorBreathStop:
-				return "Please check"
-			case model.BedSensorTachycardia:
-				return "Please check"
-			case model.BedSensorBradycardia:
-				return "Please check"
-			case model.BedSensorSeizure:
-				return "Please check"
-			case model.BedSensorAbnormalVitalSigns:
-				return "Please check"
-			case model.BedSensorBodyTempHeight:
-				return "Please check"
-			case model.BedSensorRoomTempHeight:
-				return "Please check"
-			case model.BedSensorHumidityHeight:
-				return "Please check"
-			case model.BedSensorHeartRateHeight:
-				return "Please check"
-			case model.BedSensorHeartRateLow:
-				return "Please check"
-			case model.BedSensorBedLeaving:
-				return "Please check"
-			case model.BedSensorCrying:
-				return "Please check"
-			case model.SkyBandSpo2Low:
-				return "Please check"
-			case model.SkyBandHeartRateLow:
-				return "Please check"
-			case model.SkyBandHeartRateHeight:
-				return "Please check"
-			case model.SkySOSButtonTriggered:
-				return "Please check"
-			case model.SkySOSFallDetection:
-				return "Please check"
-			case model.SkySOSGeofenceEnter:
-				return "Please check"
-			case model.SkySOSGeofenceExit:
-				return "Please check"
-			default:
-				return "Check Now!"
-			}
-		case "security_alert":
-			switch templateType {
-			case model.SafetyBreachCO:
-				return "Detects toxic gas CO exceeds exposure limits at"
-			case model.SafetyBreachSmoke:
-				return "Detecting fire signs at"
-			case model.SafetyBreachSOS:
-				return "Emergency SOS sent from location"
-			case model.SafetyBreachTempHumd:
-				return "Room temperature exceeds the threshold allowed at"
-			case model.OSLocusSOS:
-				return "Emergency signals are sent from your WAVTRAXX device at"
-			case model.OSLocusTemp:
-				return "WAVTRAXX detect a temperature exceeds the threshold allowed at"
-			case model.LowBattery:
-				return "Warning: Low battery detected at"
-			case model.BedSensorSOS:
-				return "Possible SOS Urgency Alert from OnSky device"
-			case model.BedSensorHeartStop:
-				return "Possible Heart Attack Alert from OnSky device"
-			case model.BedSensorBreathStop:
-				return "Possible Apnea Alert from OnSky device"
-			case model.BedSensorTachycardia:
-				return "OS-LAVIE detects irregular heart rhythms - tachycardia. Your heart rate is very fast, starting at "
-			case model.BedSensorBradycardia:
-				return "OS-LAVIE detects irregular heart rhythms - bradycardia. Your heart rate is very slow, starting at"
-			case model.BedSensorSeizure:
-				return "Possible Seizures Alert from OnSky device"
-			case model.BedSensorAbnormalVitalSigns:
-				return "Alert detect abnormal Vital Signs from OnSky device"
-			case model.BedSensorBodyTempHeight:
-				return "Detecting body temperature is too high from OnSky device"
-			case model.BedSensorRoomTempHeight:
-				return "Detecting room temperature is too high from OnSky device"
-			case model.BedSensorHumidityHeight:
-				return "Detecting room humidity is too high from OnSky device"
-			case model.BedSensorHeartRateHeight:
-				return "Detecting heart rate is too high from OnSky device"
-			case model.BedSensorHeartRateLow:
-				return "Detecting heart rate is too low from OnSky device"
-			case model.BedSensorBedLeaving:
-				return "Detecting user have left the bed from OnSky device"
-			case model.BedSensorCrying:
-				return "Detecting baby crying from OnSky device"
-			case model.SkyBandSpo2Low:
-				return "Detect low peripheral oxygen saturation (spo2) from OnSky device"
-			case model.SkyBandHeartRateLow:
-				return "Detect low heart rate from OnSky device"
-			case model.SkyBandHeartRateHeight:
-				return "Detect high heart rate from OnSky device"
-			case model.SkySOSButtonTriggered:
-				return "Possible SOS Emergency Alert from OnSky Alert Necklace"
-			case model.SkySOSFallDetection:
-				return "Detect fall from OnSky Alert Necklace"
-			case model.SkySOSGeofenceEnter:
-				return "Detect user entering Safety Zone by OnSky device Alert Necklace"
-			case model.SkySOSGeofenceExit:
-				return "Detect user exiting Safety Zone by OnSky device Alert Necklace"
-
-			default:
-				return "Intruder detected in"
-			}
-		}
+	bundle := locales.GetBundle(locale)
+	if bundle == nil {
 		return ""
-	default:
-		switch key {
-		case "onsky_security":
-			switch templateType {
-			case model.BedSensorAbnormalVitalSigns:
-				return "Dich vu y te OnSky"
-			case model.SafetyBreachSOS:
-				return "Dich vu y te OnSky"
-			case model.BedSensorSOS:
-				return "Dich vu y te OnSky"
-			case model.BedSensorHeartStop:
-				return "Dich vu y te OnSky"
-			case model.BedSensorBreathStop:
-				return "Dich vu y te OnSky"
-			case model.BedSensorTachycardia:
-				return "Dich vu y te OnSky"
-			case model.BedSensorBradycardia:
-				return "Dich vu y te OnSky"
-			case model.BedSensorSeizure:
-				return "Dich vu y te OnSky"
-			case model.BedSensorBodyTempHeight:
-				return "Dich vu y te OnSky"
-			case model.BedSensorRoomTempHeight:
-				return "Dich vu y te OnSky"
-			case model.BedSensorHumidityHeight:
-				return "Dich vu y te OnSky"
-			case model.BedSensorHeartRateHeight:
-				return "Dich vu y te OnSky"
-			case model.BedSensorHeartRateLow:
-				return "Dich vu y te OnSky"
-			case model.BedSensorBedLeaving:
-				return "Dich vu y te OnSky"
-			case model.BedSensorCrying:
-				return "Dich vu y te OnSky"
-			case model.SkyBandSpo2Low:
-				return "Dịch vụ cảnh báo OnSky"
-			case model.SkyBandHeartRateLow:
-				return "Dịch vụ cảnh báo OnSky"
-			case model.SkyBandHeartRateHeight:
-				return "Dịch vụ cảnh báo OnSky"
-			case model.SkySOSButtonTriggered:
-				return "Dịch vụ cảnh báo OnSky"
-			case model.SkySOSFallDetection:
-				return "Dịch vụ cảnh báo OnSky"
-			case model.SkySOSGeofenceEnter:
-				return "Dịch vụ cảnh báo OnSky"
-			case model.SkySOSGeofenceExit:
-				return "Dịch vụ cảnh báo OnSky"
-			default:
-				return "Dich vu an ninh & an toan OnSky"
-			}
-		case "zone":
-			return "khu"
-		case "phone":
-			return "SDT"
-		case "gateway_name":
-			return gatewayName
-		case "zone_name":
-			return zoneName
-		case "device":
-			return "thiet bi"
-		case "device_name":
-			return deviceName
-		case "on_date":
-			return "Vao ngay"
-		case "date":
-			return date
-		case "of":
-			return " cua "
-		case "at":
-			return "tai"
-		case "full_name":
-			return fullName + " "
-		case "at_time":
-			return "luc"
-		case "time":
-			return timestamp
-		case "please_check":
-			switch templateType {
-			case model.BedSensorAbnormalVitalSigns:
-				return "Vui long kiem tra"
-			case model.SafetyBreachSOS:
-				return "Vui long kiem tra"
-			case model.BedSensorSOS:
-				return "Vui long kiem tra"
-			case model.BedSensorHeartStop:
-				return "Vui long kiem tra"
-			case model.BedSensorBreathStop:
-				return "Vui long kiem tra"
-			case model.BedSensorTachycardia:
-				return "Vui long kiem tra"
-			case model.BedSensorBradycardia:
-				return "Vui long kiem tra"
-			case model.BedSensorSeizure:
-				return "Vui long kiem tra"
-			case model.BedSensorBodyTempHeight:
-				return "Vui long kiem tra"
-			case model.BedSensorRoomTempHeight:
-				return "Vui long kiem tra"
-			case model.BedSensorHumidityHeight:
-				return "Vui long kiem tra"
-			case model.BedSensorHeartRateHeight:
-				return "Vui long kiem tra"
-			case model.BedSensorHeartRateLow:
-				return "Vui long kiem tra"
-			case model.BedSensorBedLeaving:
-				return "Vui long kiem tra"
-			case model.BedSensorCrying:
-				return "Vui long kiem tra"
-			case model.SkyBandSpo2Low:
-				return "Vui long kiem tra"
-			case model.SkyBandHeartRateLow:
-				return "Vui long kiem tra"
-			case model.SkyBandHeartRateHeight:
-				return "Vui long kiem tra"
-			case model.SkySOSButtonTriggered:
-				return "Vui long kiem tra"
-			case model.SkySOSFallDetection:
-				return "Vui long kiem tra"
-			case model.SkySOSGeofenceEnter:
-				return "Vui long kiem tra"
-			case model.SkySOSGeofenceExit:
-				return "Vui long kiem tra"
-			default:
-				return "Vui long kiem tra"
-			}
-		case "security_alert":
-			switch templateType {
-			case model.SafetyBreachCO:
-				return "Phat hien khi doc CO vuot nguong cho phep tai"
-			case model.SafetyBreachSmoke:
-				return "Phat hien dau hieu chay no tai"
-			case model.SafetyBreachSOS:
-				return "Tin hieu khan cap SOS duoc gui di tu "
-			case model.SafetyBreachTempHumd:
-				return "Nhiet do trong phong vuot qua nguong cho phep tai"
-			case model.OSLocusSOS:
-				return "Tin hieu khan cap duoc gui di tu thiet bi WAVTRAXX tai"
-			case model.OSLocusTemp:
-				return "Thiet bi WAVTRAXX phat hien nhiet do vuot qua nguong cho phep tai"
-			case model.LowBattery:
-				return "Canh bao thiet bi SOS yeu pin tai"
-			case model.BedSensorSOS:
-				return "Canh bao co tin hieu cap cuu cua nguoi dung duoc gui tu thiet bi OnSky"
-			case model.BedSensorHeartStop:
-				return "Canh bao tim nguoi dung co dau hieu ngung dap duoc gui tu thiet bi OnSky"
-			case model.BedSensorBreathStop:
-				return "Canh bao phoi nguoi dung co dau hieu ngung tho duoc gui tu thiet bi OnSky"
-			case model.BedSensorTachycardia:
-				return "Canh bao tim nguoi dung co dau hieu khong on dinh. Tim cua ban dap rat nhanh vao luc "
-			case model.BedSensorBradycardia:
-				return "Canh bao tim nguoi dung co dau hieu khong on dinh. Tim cua ban dap rat cham vao luc"
-			case model.BedSensorSeizure:
-				return "Canh bao nguoi dung co dau hieu co giat duoc gui tu thiet bi OnSky"
-			case model.BedSensorAbnormalVitalSigns:
-				return "Canh bao phat hien Dau Hieu Sinh Ton bat thuong duoc gui tu thiet bi OnSky"
-			case model.BedSensorBodyTempHeight:
-				return "Phat hien nhiet do co the qua cao tu thiet bi OnSky"
-			case model.BedSensorRoomTempHeight:
-				return "Phat hien nhiet do phong qua cao tu thiet bi OnSky"
-			case model.BedSensorHumidityHeight:
-				return "Phat hien do am qua cao tu thiet bi OnSky"
-			case model.BedSensorHeartRateHeight:
-				return "Phat hien nhip tim qua cao tu thiet bi OnSky"
-			case model.BedSensorHeartRateLow:
-				return "Phat hien nhip tim qua thap tu thiet bi OnSky"
-			case model.BedSensorBedLeaving:
-				return "Phat hien nguoi dung da roi khoi giuong tu thiet bi OnSky"
-			case model.BedSensorCrying:
-				return "Phat hien em be dang khoc tu thiet bi OnSky"
-			case model.SkyBandSpo2Low:
-				return "Phát hiện độ bão hòa oxy trong máu (spo2) thấp từ thiết bị OnSky"
-			case model.SkyBandHeartRateLow:
-				return "Phát hiện nhip tim thấp từ thiết bị OnSky"
-			case model.SkyBandHeartRateHeight:
-				return "Phát hiện nhịp tim cao từ thiết bị OnSky"
-			case model.SkySOSButtonTriggered:
-				return "Canh bao khan cap SOS tu OnSky Alert Necklace"
-			case model.SkySOSFallDetection:
-				return "Phat hien te nga tu OnSky Alert Necklace"
-			case model.SkySOSGeofenceEnter:
-				return "Phat hien nguoi dung di vao vung an toan tu OnSky Alert Necklace"
-			case model.SkySOSGeofenceExit:
-				return "Phat hien nguoi dung di ra khoi vung an toan tu OnSky Alert Necklace"
-			default:
-				return "Phat hien dot nhap tai"
-			}
+	}
+
+	switch key {
+	case "onsky_security":
+		if h, ok := bundle.ServiceHeaders[templateType]; ok {
+			return h
 		}
+		return bundle.DefaultHeader
+	case "security_alert":
+		if a, ok := bundle.Alerts[templateType]; ok {
+			return a
+		}
+		return bundle.DefaultAlert
+	case "please_check":
+		if act, ok := bundle.Actions[templateType]; ok {
+			return act
+		}
+		return bundle.DefaultAction
+	case "zone":
+		return bundle.Labels.ZoneLabel
+	case "phone":
+		return bundle.Labels.PhoneLabel
+	case "gateway_name":
+		return gatewayName
+	case "zone_name":
+		return zoneName
+	case "device":
+		return bundle.Labels.DeviceLabel
+	case "device_name":
+		return deviceName
+	case "on_date":
+		return bundle.Labels.OnDateLabel
+	case "date":
+		return date
+	case "of":
+		return bundle.Labels.OfLabel
+	case "at":
+		return bundle.Labels.AtLabel
+	case "full_name":
+		return fullName + " "
+	case "at_time":
+		return bundle.Labels.AtTimeLabel
+	case "time":
+		return timestamp
+	default:
 		return ""
 	}
 }
